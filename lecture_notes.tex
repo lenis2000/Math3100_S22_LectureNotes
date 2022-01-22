@@ -65,15 +65,58 @@
 
 \maketitle
 
-\section{Week 1}
+\section{Lecture 1. January 19}
 
-\subsection{Lecture 1.1}
+Introductory lecture, just saying hello to the students.
 
+\section{Lecture 2. No deadline}
 
-Section 1.1 in the textbook.
+Section 1.1
 
+A recording of an in-class piece, explaining 
+the definition of the
+probability space $\Omega$, events $\mathcal{F}$, 
+and probability measure $P(A)$.
 
+\section{Lecture 3. January 21}
 
+Sections 1.1--1.2.
+
+\begin{itemize}
+	\item 
+Recalling $(\Omega,\mathcal{F},P)$. 
+\item 
+Finite sample spaces, when it is 
+enough to specify $P(\left\{ \omega \right\})$ for each singleton $\omega\in \Omega$.
+We only need to have $P(\left\{ \omega \right\})\ge0$ and $\sum_{\omega\in \Omega}P\left( \left\{ \omega \right\} \right)=1$
+\item Biased coin, 2 flips --- example
+\item Equally likely outcomes, $P(A)=\frac{\# A}{\#\Omega}$. 
+\item Example with urns.
+\end{itemize}
+
+\section{Lecture 4. January 24}
+
+Section 1.2. Discussing 3 settings,
+when we sample $k$ times from $n$ objects. This is an instance of equally likely
+outcomes.
+Recall the factorial:
+\begin{equation*}
+	\begin{cases}
+		n!=1\cdot 2\cdot 3\cdot \ldots\cdot n,&n\ge1 
+		\\
+		0!=1.
+	\end{cases}
+\end{equation*}
+So, $0!=1$, $1!=1$, $2!=2$, $3!=6$, $4!=24$, and so on.
+
+\begin{itemize}
+	\item Sampling with replacement, order matters: $\# \Omega_k=n^k$.
+	\item Sampling without replacement, order matters: $\# \Omega_k=n(n-1)\ldots (n-k+1)=\dfrac{n!}{(n-k)!}$.
+	\item Sampling without replacement, order does not matter:
+		$$\# \Omega_k=\dfrac{n(n-1)\ldots(n-k+1) }{k!}
+		=\dfrac{n!}{k!\, (n-k!)}=\binom nk .$$
+		The quantity $\binom nk$ has a special name, ``binomial coefficient''.
+\end{itemize}
 
 
 
